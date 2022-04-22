@@ -1,0 +1,15 @@
+"""Configuration parameters of the application"""
+import socket
+
+SERVER_PORT = 3333
+SERVER_HOST_NAME = socket.gethostname()
+SERVER_IP_ADDRESS = socket.gethostbyname(SERVER_HOST_NAME)
+
+CLIENT_CONNECTION_TIMEOUT = 5
+PACKAGE_CHUNK_SIZE = 8
+HEADER_SIZE = 2
+
+MIN_TEMPERATURE_INT = -5000
+MAX_TEMPREATURE_INT = 12000
+MIN_HUMIDITY_INT = 0
+MAX_HUMIDITY_INT = 10000
