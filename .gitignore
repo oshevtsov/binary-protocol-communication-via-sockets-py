@@ -1,0 +1,9 @@
+# Byte-compiled and optimized files
+__pycache__/
+*.py[cod]
+
+# Environments
+venv/
+.vscode/
+archive/
+*.csv
