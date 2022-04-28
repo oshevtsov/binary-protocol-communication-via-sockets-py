@@ -79,5 +79,8 @@ class Server:
 
 
 if __name__ == "__main__":
-    server = Server()
-    server.listen()
+    try:
+        server = Server()
+        server.listen()
+    except OSError as e:
+        logging.critical(f"Server exception, {e}")

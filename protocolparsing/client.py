@@ -66,5 +66,8 @@ class Client:
 
 
 if __name__ == "__main__":
-    client = Client()
-    client.connect()
+    try:
+        client = Client()
+        client.connect()
+    except OSError as e:
+        logging.critical(f"Client exception, {e}")
